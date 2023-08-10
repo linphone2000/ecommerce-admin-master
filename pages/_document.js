@@ -5,9 +5,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>
-          Electronic Store Administrator
-        </title>
       </Head>
       <body>
         <Main />

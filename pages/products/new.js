@@ -13,7 +13,7 @@ export default function NewProduct() {
      }
     return(
         <Layout>
-            <form onSubmit={createProduct}>
+            <form className="" onSubmit={createProduct}>
                 <h1>Product Details</h1>
                 <label>Product Name</label>
                 <input 
@@ -24,6 +24,7 @@ export default function NewProduct() {
                 />
                 <label>Description</label>
                 <textarea 
+                    className="pb-0 mb-0"
                     placeholder="Description" 
                     value={description}
                     onChange={ev => setDescription(ev.target.value)}    
@@ -37,7 +38,7 @@ export default function NewProduct() {
                 />
                 <button 
                     type="submit" 
-                    className="btn-primary">Save
+                    className="btn-primary mt-2">Save
                 </button>
             </form>
         </Layout>
